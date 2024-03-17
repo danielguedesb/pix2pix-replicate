@@ -25,7 +25,7 @@ class Predictor(BasePredictor):
             model_id,
             torch_dtype=torch.float16,
             cache_dir=MODEL_CACHE,
-            local_files_only=True,
+            local_files_only=False,
             safety_checker=None,
         ).to("cuda")
 
